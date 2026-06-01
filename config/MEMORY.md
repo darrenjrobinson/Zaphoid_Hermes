@@ -1,0 +1,5 @@
+Doc's Windows host is Windows 10 (not 11 — mirrored networking unavailable). Windows username: darrenjrobinson. WSL2 hostname: OpenClaw (migrated from OpenClaw to Hermes Agent). WSL2 IP: 172.22.22.1. Windows portproxy already configured: port 8000 and 18789 → 172.22.22.1. Hermes api_server configured on 0.0.0.0:8000 (OpenAI-compatible at /v1).
+§
+Doc prefers I use hermes config set commands rather than direct file edits for config.yaml (security feature — direct edits are blocked anyway). For complex multi-line YAML he uses hermes config edit himself.
+§
+Zaphoid backup repo: github.com/darrenjrobinson/Zaphoid_Hermes. Backup scripts at ~/.hermes/scripts/github-backup/ (backup.sh + generate-readme.py). Cron job ID e054d5349bf5 runs daily at 6am AEST. Credentials for git stored in .netrc (600 perms). Commits sanitised config, skills list, cron jobs, system snapshot.

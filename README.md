@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-06-01 15:28 AEST
+> **Last backup:** 2026-06-01 15:36 AEST
 
 ---
 
@@ -40,11 +40,11 @@
 
 ### Startup Sequence
 
-1. Windows boots → LMStudio auto-starts (`http://172.22.16.1:1234`)
-2. WSL2 Ubuntu auto-starts via Windows Task Scheduler
+1. Windows boots
+2. WSL2 auto-starts via Windows Task Scheduler
 3. Hermes gateway launches:
 ```cmd
-start /min wsl.exe -d Ubuntu -u root -- bash -c "hermes gateway run"
+start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 ```
 
 ---
@@ -55,23 +55,23 @@ start /min wsl.exe -d Ubuntu -u root -- bash -c "hermes gateway run"
 |------|-------|----------|
 | **Primary** | anthropic/claude-sonnet-4.6 | OpenRouter (BYOK) |
 | Fallback | openai/gpt-4o | OpenRouter |
-| Local (heartbeat) | qwen3-4b or similar | LM Studio (local, free) |
 
 **Notes:**
 - Primary provider: OpenRouter with BYOK (Doc's token policy — be frugal)
-- LM Studio: runs on Windows host at `http://172.22.16.1:1234` — heartbeat tasks only
 
 ---
 
-## Memory System
+## Memory & Identity
 
 | Property | Value |
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
-| Memory files | 4 |
+| Memory files | 2 |
 | Skill count | 97 |
 | Session DB | `~/.hermes/state.db` |
-| User profile | `~/.hermes/memories/` |
+| Agent notes | `config/MEMORY.md` (see this repo) |
+| User profile | `config/USER.md` (see this repo) |
+| Soul / system prompt | `config/SOUL.md` (see this repo) |
 
 ---
 
@@ -263,7 +263,18 @@ git clone https://github.com/darrenjrobinson/Zaphoid_Hermes.git /tmp/zaphoid-res
 cp /tmp/zaphoid-restore/config/hermes.yaml ~/.hermes/config.yaml
 ```
 
-### 3. Restore Credentials
+### 3. Restore Identity & Memory
+
+```bash
+# Restore soul / system prompt
+cp /tmp/zaphoid-restore/config/SOUL.md ~/.hermes/SOUL.md
+
+# Restore persistent memory and user profile
+cp /tmp/zaphoid-restore/config/MEMORY.md ~/.hermes/memories/MEMORY.md
+cp /tmp/zaphoid-restore/config/USER.md ~/.hermes/memories/USER.md
+```
+
+### 4. Restore Credentials
 
 Re-create `~/.hermes/.env` with actual API keys (not stored in this repo).
 The key names that were configured at time of backup:
@@ -282,27 +293,27 @@ TELEGRAM_HOME_CHANNEL=<your-value>
 EOF
 ```
 
-### 4. Configure Telegram
+### 5. Configure Telegram
 
 ```bash
 hermes gateway setup   # follow prompts for Telegram bot token
 ```
 
-### 5. Restore Skills
+### 6. Restore Skills
 
 ```bash
 # Re-install hub skills from config/skills.json
 hermes skills list     # check what's available
 ```
 
-### 6. Windows Startup Script
+### 7. Windows Startup Script
 
 Create a Windows startup script or Task Scheduler entry:
 ```cmd
 start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 ```
 
-### 7. Verify
+### 8. Verify
 
 ```bash
 hermes doctor --fix
