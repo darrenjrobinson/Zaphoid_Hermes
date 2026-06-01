@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-06-01 15:36 AEST
+> **Last backup:** 2026-06-02 06:51 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 3 weeks, 22 hours, 22 minutes |
+| Uptime | up 3 weeks, 1 day, 12 hours, 33 minutes |
 
 ### Network / Connectivity
 
@@ -66,8 +66,8 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 | Property | Value |
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
-| Memory files | 2 |
-| Skill count | 97 |
+| Memory files | 4 |
+| Skill count | 98 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,7 +75,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (97 total)
+## Installed Skills (98 total)
 
 - `apple/apple-notes`
 - `apple/apple-reminders`
@@ -117,6 +117,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `devops/webhook-subscriptions`
 - `devops/wsl2-windows-networking`
 - `dogfood`
+- `email/agentmail`
 - `email/himalaya`
 - `gaming/minecraft-modpack-server`
 - `gaming/pokemon-player`
@@ -180,7 +181,9 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ## Cron Jobs
 
-_No cron jobs configured._
+| ID | Name | Schedule | Status | Prompt (preview) |
+|---|---|---|---|---|
+| `?` | ? | `?` | ✅ |  |
 
 
 ---
@@ -189,6 +192,7 @@ _No cron jobs configured._
 
 The following service keys are configured in `~/.hermes/.env` (values **not** stored here):
 
+- `AGENTMAIL_API_KEY`
 - `API_SERVER_HOST`
 - `API_SERVER_KEY`
 - `API_SERVER_PORT`
@@ -219,21 +223,21 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
 
 ```json
 {
-  "backup_timestamp": "2026-06-01T15:28:33+10:00",
+  "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
+  "hermes_version": "0.15.1",
   "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 3 weeks, 22 hours, 22 minutes",
-  "disk_hermes": "31M",
+  "uptime": "up 3 weeks, 1 day, 12 hours, 33 minutes",
+  "disk_hermes": "33M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 97,
-  "hermes_version": "0.15.1",
-  "platforms": [
-    "telegram",
-    "api_server"
-  ]
+  "skill_count": 98,
+  "platforms": {
+    "telegram": "connected",
+    "api_server": "connected"
+  }
 }
 ```
 
@@ -282,6 +286,7 @@ The key names that were configured at time of backup:
 ```bash
 cat > ~/.hermes/.env << 'EOF'
 # Fill in your actual values:
+AGENTMAIL_API_KEY=<your-value>
 API_SERVER_HOST=<your-value>
 API_SERVER_KEY=<your-value>
 API_SERVER_PORT=<your-value>

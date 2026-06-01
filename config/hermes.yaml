@@ -1,4 +1,6 @@
-# Sanitised Hermes config snapshot
+# Auto-generated sanitised config snapshot
+# Generated: 
+
 model:
   provider: openrouter
   base_url: https://openrouter.ai/api/v1

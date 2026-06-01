@@ -1,0 +1,24 @@
+{
+  "pid": 1080,
+  "kind": "hermes-gateway",
+  "start_time": 188084349,
+  "gateway_state": "running",
+  "exit_reason": null,
+  "restart_requested": false,
+  "active_agents": 0,
+  "platforms": {
+    "telegram": {
+      "state": "connected",
+      "error_code": null,
+      "error_message": null,
+      "updated_at": "2026-06-01T01:18:30.734430+00:00"
+    },
+    "api_server": {
+      "state": "connected",
+      "error_code": null,
+      "error_message": null,
+      "updated_at": "2026-06-01T01:18:30.816437+00:00"
+    }
+  },
+  "updated_at": "2026-06-01T01:18:30.821003+00:00"
+}

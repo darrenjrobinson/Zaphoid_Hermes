@@ -39,6 +39,7 @@
   "devops/webhook-subscriptions",
   "devops/wsl2-windows-networking",
   "dogfood",
+  "email/agentmail",
   "email/himalaya",
   "gaming/minecraft-modpack-server",
   "gaming/pokemon-player",

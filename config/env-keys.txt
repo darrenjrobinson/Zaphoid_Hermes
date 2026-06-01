@@ -1,6 +1,7 @@
 # Hermes/Zaphoid .env key inventory (values redacted)
 # Only keys owned by this agent are listed.
 
+AGENTMAIL_API_KEY=<REDACTED>
 API_SERVER_HOST=<REDACTED>
 API_SERVER_KEY=<REDACTED>
 API_SERVER_PORT=<REDACTED>
