@@ -1,0 +1,10 @@
+# Never commit actual secrets
+.env
+*.key
+*.pem
+auth.json
+credentials/
+*.sqlite
+*.db
+*.db-wal
+*.db-shm

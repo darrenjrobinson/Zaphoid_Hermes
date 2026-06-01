@@ -1,0 +1,17 @@
+{
+  "backup_timestamp": "2026-06-01T15:28:33+10:00",
+  "hostname": "OpenClaw",
+  "python_version": "3.13.5",
+  "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
+  "wsl_distro": "Debian GNU/Linux 13 (trixie)",
+  "uptime": "up 3 weeks, 22 hours, 22 minutes",
+  "disk_hermes": "31M",
+  "git_version": "git version 2.47.3",
+  "memory_file_count": 4,
+  "skill_count": 97,
+  "hermes_version": "0.15.1",
+  "platforms": [
+    "telegram",
+    "api_server"
+  ]
+}
