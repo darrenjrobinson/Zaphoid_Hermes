@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "description": "Doc's regular Untappd crew. Used by the untappd-mcp skill for mate queries.",
+    "last_updated": "2026-06-02",
+    "maintained_by": "Zaphoid (Hermes Agent)"
+  },
+  "mates": [
+    { "name": "Docta",          "username": "Docta",          "notes": "Doc himself — Darren Robinson" },
+    { "name": "Wardy",          "username": "mw1414",         "notes": "" },
+    { "name": "Shoey",          "username": "LightBeerKing",  "notes": "" },
+    { "name": "Rob",            "username": "robmc0",         "notes": "" },
+    { "name": "Michael",        "username": "OzBeer_MD",      "notes": "" },
+    { "name": "Alen",           "username": "ale_n",          "notes": "Sydney" },
+    { "name": "Jeff",           "username": "jwarner64",      "notes": "" },
+    { "name": "Sam D",          "username": "samdf",          "notes": "" },
+    { "name": "Aaron",          "username": "hereforthehops", "notes": "Adelaide" }
+  ]
+}

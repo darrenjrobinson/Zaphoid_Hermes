@@ -4,4 +4,4 @@ Doc prefers I use hermes config set commands rather than direct file edits for c
 §
 Zaphoid backup repo: github.com/darrenjrobinson/Zaphoid_Hermes. Backup scripts at ~/.hermes/scripts/github-backup/ (backup.sh + generate-readme.py). Cron job ID e054d5349bf5 runs daily at 6am AEST. Credentials for git stored in .netrc (600 perms). Commits sanitised config, skills list, cron jobs, system snapshot.
 §
-Zaphoid email: zaphoid@agentmail.to (AgentMail). Doc's email: darren@darrenjrobinson.com. Send finished plans/docs as both Markdown and PDF attachments. API key in .env as AGENTMAIL_API_KEY. Send endpoint: POST /inboxes/{url-encoded-inbox-id}/messages/send (NOT /messages). Response shape: {message_id, thread_id}.
+Zaphoid email: zaphoid@agentmail.to (AgentMail). Doc's email: darren@darrenjrobinson.com. Send finished plans/docs as both Markdown and PDF attachments. API key in .env as AGENTMAIL_API_KEY. Send endpoint: POST /inboxes/{url-encoded-inbox-id}/messages/send (NOT /messages). Response shape: {message_id, thread_id}. Do NOT poll or check for incoming email — Doc will explicitly say when an email has arrived and what to do with it.

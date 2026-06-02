@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-06-02 06:51 AEST
+> **Last backup:** 2026-06-03 06:00 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 3 weeks, 1 day, 12 hours, 33 minutes |
+| Uptime | up 3 weeks, 2 days, 11 hours, 7 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 98 |
+| Skill count | 99 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,7 +75,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (98 total)
+## Installed Skills (99 total)
 
 - `apple/apple-notes`
 - `apple/apple-reminders`
@@ -132,6 +132,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `media/heartmula`
 - `media/songsee`
 - `media/spotify`
+- `media/untappd-mcp`
 - `media/youtube-content`
 - `mlops/evaluation/lm-evaluation-harness`
 - `mlops/evaluation/weights-and-biases`
@@ -201,6 +202,8 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
 - `TELEGRAM_ALLOWED_USERS`
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_HOME_CHANNEL`
+- `UNTAPPD_CLIENT_ID`
+- `UNTAPPD_CLIENT_SECRET`
 
 
 ---
@@ -229,11 +232,11 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "hermes_version": "0.15.1",
   "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 3 weeks, 1 day, 12 hours, 33 minutes",
-  "disk_hermes": "33M",
+  "uptime": "up 3 weeks, 2 days, 11 hours, 7 minutes",
+  "disk_hermes": "36M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 98,
+  "skill_count": 99,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"
@@ -295,6 +298,8 @@ OPENROUTER_API_KEY=<your-value>
 TELEGRAM_ALLOWED_USERS=<your-value>
 TELEGRAM_BOT_TOKEN=<your-value>
 TELEGRAM_HOME_CHANNEL=<your-value>
+UNTAPPD_CLIENT_ID=<your-value>
+UNTAPPD_CLIENT_SECRET=<your-value>
 EOF
 ```
 

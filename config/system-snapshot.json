@@ -5,11 +5,11 @@
   "hermes_version": "0.15.1",
   "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 3 weeks, 1 day, 12 hours, 33 minutes",
-  "disk_hermes": "33M",
+  "uptime": "up 3 weeks, 2 days, 11 hours, 7 minutes",
+  "disk_hermes": "36M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 98,
+  "skill_count": 99,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"

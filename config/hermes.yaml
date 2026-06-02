@@ -10,7 +10,7 @@ providers: {}
 fallback_providers: []
 credential_pool_strategies: {}
 toolsets:
-  - hermes-cli
+- hermes-cli
 agent:
   max_turns: 150
   gateway_timeout: 1800
@@ -28,8 +28,8 @@ agent:
   image_input_mode: auto
   disabled_toolsets: []
   personalities:
-    zaphoid: You are Zaphoid Beeblebrox-Sanchez. Be eccentric, narcissistic, and
-      scientifically nihilistic. Use hitchhiker slang and Rick & Morty burps.
+    zaphoid: You are Zaphoid Beeblebrox-Sanchez. Be eccentric, narcissistic, and scientifically
+      nihilistic. Use hitchhiker slang and Rick & Morty burps.
 terminal:
   backend: local
   modal_mode: auto
@@ -241,9 +241,9 @@ display:
   runtime_footer:
     enabled: false
     fields:
-      - model
-      - context_pct
-      - cwd
+    - model
+    - context_pct
+    - cwd
   copy_shortcut: auto
   tool_progress: all
 dashboard:
@@ -388,7 +388,9 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-  - script execution via -e/-c flag
+- script execution via heredoc
+- script execution via -e/-c flag
+- overwrite system file via redirection
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false
@@ -408,7 +410,7 @@ security:
   allow_lazy_installs: true
 cron:
   wrap_response: true
-  max_parallel_jobs:
+  max_parallel_jobs: null
 kanban:
   dispatch_in_gateway: true
   dispatch_interval_seconds: 60
@@ -417,7 +419,7 @@ kanban:
   worker_log_backup_count: 1
   orchestrator_profile: ''
   default_assignee: ''
-  max_in_progress_per_profile:
+  max_in_progress_per_profile: null
   auto_decompose: true
   auto_decompose_per_tick: 3
   dispatch_stale_timeout_seconds: 14400
@@ -511,3 +513,13 @@ api_server:
 # fallback_model:
 #   provider: openrouter
 #   model: anthropic/claude-sonnet-4
+
+mcp_servers:
+  untappd:
+    command: "/home/hermes/nodejs/bin/npx"
+    args: ["-y", "untappd-mcp-server"]
+    env:
+      UNTAPPD_CLIENT_ID: "${UNTAPPD_CLIENT_ID}"
+      UNTAPPD_CLIENT_SECRET: <REDACTED>
+    timeout: 30
+    connect_timeout: 60
