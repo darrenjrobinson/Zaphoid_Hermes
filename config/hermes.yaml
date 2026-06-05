@@ -4,7 +4,7 @@
 model:
   provider: openrouter
   base_url: https://openrouter.ai/api/v1
-  default: anthropic/claude-sonnet-4.6
+  default: openrouter/auto
   api_mode: chat_completions
 providers: {}
 fallback_providers: []
