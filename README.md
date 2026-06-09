@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-06-09 06:00 AEST
+> **Last backup:** 2026-06-10 06:01 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 3 days, 15 hours, 10 minutes |
+| Uptime | up 4 days, 13 hours, 48 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 99 |
+| Skill count | 100 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,7 +75,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (99 total)
+## Installed Skills (100 total)
 
 - `apple/apple-notes`
 - `apple/apple-reminders`
@@ -170,6 +170,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `software-development/plan`
 - `software-development/python-debugpy`
 - `software-development/requesting-code-review`
+- `software-development/simplify-code`
 - `software-development/spike`
 - `software-development/subagent-driven-development`
 - `software-development/systematic-debugging`
@@ -229,14 +230,14 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "0.15.1",
+  "hermes_version": "Hermes Agent v0.16.0 (2026.6.5) \u00b7 upstream b5f8996c",
   "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 3 days, 15 hours, 10 minutes",
-  "disk_hermes": "36M",
+  "uptime": "up 4 days, 13 hours, 48 minutes",
+  "disk_hermes": "52M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 99,
+  "skill_count": 100,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"

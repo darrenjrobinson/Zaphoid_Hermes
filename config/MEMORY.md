@@ -9,3 +9,5 @@ Zaphoid email: zaphoid@agentmail.to. Doc's email: darren@darrenjrobinson.com. Se
 Node.js 22 installed user-local at ~/nodejs/ (no sudo — system has no curl/wget and no sudo access for apt). PATH added to ~/.bashrc. npx is at ~/nodejs/bin/npx. Any tool or script needing node/npx must use this path or export PATH="$HOME/nodejs/bin:$PATH" first.
 §
 Untappd MCP configured: untappd-mcp-server via npx, creds in .env as UNTAPPD_CLIENT_ID / UNTAPPD_CLIENT_SECRET. Doc's Untappd username: Docta. Mates list at ~/.hermes/data/untappd-mates.json. MCP tools need /reload-mcp after gateway restart (not yet live as native tools — session must reload). Rate limit: 100 calls/hour.
+§
+Doc wants Hermes Desktop on Windows to connect to the existing WSL Hermes deployment/dashboard rather than create a separate native Windows Hermes setup when possible.
