@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-06-11 06:00 AEST
+> **Last backup:** 2026-06-12 06:00 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 5 days, 13 hours, 14 minutes |
+| Uptime | up 17 hours, 24 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 100 |
+| Skill count | 102 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,7 +75,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (100 total)
+## Installed Skills (102 total)
 
 - `apple/apple-notes`
 - `apple/apple-reminders`
@@ -161,6 +161,8 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `research/research-paper-writing`
 - `smart-home/openhue`
 - `social-media/xurl`
+- `software-development/agent-browser`
+- `software-development/brave-search-mcp`
 - `software-development/debugging-hermes-tui-commands`
 - `software-development/hermes-agent-skill-authoring`
 - `software-development/hermes-s6-container-supervision`
@@ -198,6 +200,7 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
 - `API_SERVER_HOST`
 - `API_SERVER_KEY`
 - `API_SERVER_PORT`
+- `BRAVE_API_KEY`
 - `GITHUB_TOKEN`
 - `OPENROUTER_API_KEY`
 - `TELEGRAM_ALLOWED_USERS`
@@ -230,14 +233,14 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.16.0 (2026.6.5) \u00b7 upstream 49dd776d",
-  "os": "Linux OpenClaw 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 GNU/Linux",
+  "hermes_version": "Hermes Agent v0.16.0 (2026.6.5) \u00b7 upstream d1383a6b",
+  "os": "Linux OpenClaw 6.18.33.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 5 days, 13 hours, 14 minutes",
-  "disk_hermes": "50M",
+  "uptime": "up 17 hours, 24 minutes",
+  "disk_hermes": "57M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 100,
+  "skill_count": 102,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"
@@ -294,6 +297,7 @@ AGENTMAIL_API_KEY=<your-value>
 API_SERVER_HOST=<your-value>
 API_SERVER_KEY=<your-value>
 API_SERVER_PORT=<your-value>
+BRAVE_API_KEY=<your-value>
 GITHUB_TOKEN=<your-value>
 OPENROUTER_API_KEY=<your-value>
 TELEGRAM_ALLOWED_USERS=<your-value>

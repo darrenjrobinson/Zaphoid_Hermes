@@ -1,7 +1,7 @@
 {
-  "pid": 2496,
+  "pid": 640,
   "kind": "hermes-gateway",
-  "start_time": 32484660,
+  "start_time": 238570,
   "gateway_state": "running",
   "exit_reason": null,
   "restart_requested": false,
@@ -11,14 +11,14 @@
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-06-08T23:13:13.575250+00:00"
+      "updated_at": "2026-06-11T02:08:48.549154+00:00"
     },
     "api_server": {
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-06-08T23:13:13.722398+00:00"
+      "updated_at": "2026-06-11T02:08:48.627151+00:00"
     }
   },
-  "updated_at": "2026-06-08T23:13:13.727134+00:00"
+  "updated_at": "2026-06-11T02:08:48.631727+00:00"
 }

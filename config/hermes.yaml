@@ -523,3 +523,10 @@ mcp_servers:
       UNTAPPD_CLIENT_SECRET: <REDACTED>
     timeout: 30
     connect_timeout: 60
+  brave-search:
+    command: "npx"
+    args: ["-y", "@brave/brave-search-mcp-server"]
+    env:
+      BRAVE_API_KEY: <REDACTED>
+
+
