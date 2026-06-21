@@ -11,6 +11,7 @@ fallback_providers: []
 credential_pool_strategies: {}
 toolsets:
 - hermes-cli
+max_concurrent_sessions: null
 agent:
   max_turns: 150
   gateway_timeout: 1800
@@ -107,6 +108,7 @@ compression:
   hygiene_hard_message_limit: 400
   protect_first_n: 3
   abort_on_summary_failure: false
+  codex_gpt55_autoraise: true
 prompt_caching:
   cache_ttl: 5m
 openrouter:
@@ -175,6 +177,13 @@ auxiliary:
     api_key: ''
     timeout: 30
     extra_body: {}
+  tts_audio_tags:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 30
+    extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
@@ -213,6 +222,7 @@ display:
   resume_max_assistant_lines: 3
   resume_skip_tool_only: true
   busy_input_mode: interrupt
+  interface: cli
   tui_auto_resume_recent: false
   tui_agents_nudge: true
   bell_on_complete: false
@@ -237,7 +247,11 @@ display:
   tool_progress_overrides: {}
   tool_preview_length: 0
   ephemeral_system_ttl: 0
-  platforms: {}
+  platforms:
+    telegram:
+      streaming: true
+    discord:
+      streaming: false
   runtime_footer:
     enabled: false
     fields:
@@ -252,6 +266,12 @@ dashboard:
   oauth:
     client_id: ''
     portal_url: ''
+  basic_auth:
+    username: ''
+    password_hash: ''
+    password: ''
+    secret: ''
+    session_ttl_seconds: 0
   public_url: ''
 privacy:
   redact_pii: false
@@ -265,6 +285,11 @@ tts:
   openai:
     model: gpt-4o-mini-tts
     voice: alloy
+  gemini:
+    model: gemini-2.5-flash-preview-tts
+    voice: Kore
+    audio_tags: false
+    persona_prompt_file: ''
   xai:
     voice_id: eve
     language: en
@@ -311,6 +336,7 @@ context:
 memory:
   memory_enabled: true
   user_profile_enabled: true
+  write_approval: false
   memory_char_limit: 2200
   user_char_limit: 1375
   provider: ''
@@ -337,12 +363,14 @@ skills:
   inline_shell: false
   inline_shell_timeout: 10
   guard_agent_created: false
+  write_approval: false
 curator:
   enabled: true
   interval_hours: 168
   min_idle_hours: 2
   stale_after_days: 30
   archive_after_days: 90
+  prune_builtins: true
   backup:
     enabled: true
     keep: 5
@@ -367,6 +395,20 @@ discord:
   server_actions: ''
   allow_any_attachment: false
   max_attachment_bytes: 33554432
+  voice_fx:
+    enabled: false
+    ambient_enabled: true
+    ambient_path: ''
+    ambient_gain: 0.18
+    duck_gain: 0.06
+    speech_gain: 1.0
+    ack_enabled: true
+    ack_phrases:
+    - Let me look into that.
+    - One moment.
+    - Checking on that now.
+    - Give me a sec.
+    - On it.
 whatsapp: {}
 telegram:
   reactions: false
@@ -447,6 +489,13 @@ gateway:
   media_delivery_allow_dirs: []
   trust_recent_files: true
   trust_recent_files_seconds: 600
+streaming:
+  enabled: false
+  transport: auto
+  edit_interval: 0.8
+  buffer_threshold: 24
+  cursor: " \u2589"
+  fresh_final_after_seconds: 60.0
 sessions:
   auto_prune: false
   retention_days: 90
@@ -457,9 +506,11 @@ onboarding:
   seen:
     busy_input_prompt: true
     tool_progress_prompt: true
+  profile_build: ask
 updates:
   pre_update_backup: false
   backup_keep: 5
+  non_interactive_local_changes: stash
 lsp:
   enabled: true
   wait_mode: document
@@ -482,7 +533,7 @@ secrets:
 paste_collapse_threshold: 5
 paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
-_config_version: 25
+_config_version: 29
 session_reset:
   mode: none
 api_server:
@@ -491,6 +542,24 @@ api_server:
   port: 8000
   api_key: <REDACTED>
   key: <REDACTED>
+mcp_servers:
+  untappd:
+    command: /home/hermes/nodejs/bin/npx
+    args:
+    - -y
+    - untappd-mcp-server
+    env:
+      UNTAPPD_CLIENT_ID: ${UNTAPPD_CLIENT_ID}
+      UNTAPPD_CLIENT_SECRET: <REDACTED>
+    timeout: 30
+    connect_timeout: 60
+  brave-search:
+    command: npx
+    args:
+    - -y
+    - '@brave/brave-search-mcp-server'
+    env:
+      BRAVE_API_KEY: <REDACTED>
 
 # ── Fallback Model ────────────────────────────────────────────────────
 # Automatic provider failover when primary is unavailable.
@@ -513,20 +582,3 @@ api_server:
 # fallback_model:
 #   provider: openrouter
 #   model: anthropic/claude-sonnet-4
-
-mcp_servers:
-  untappd:
-    command: "/home/hermes/nodejs/bin/npx"
-    args: ["-y", "untappd-mcp-server"]
-    env:
-      UNTAPPD_CLIENT_ID: "${UNTAPPD_CLIENT_ID}"
-      UNTAPPD_CLIENT_SECRET: <REDACTED>
-    timeout: 30
-    connect_timeout: 60
-  brave-search:
-    command: "npx"
-    args: ["-y", "@brave/brave-search-mcp-server"]
-    env:
-      BRAVE_API_KEY: <REDACTED>
-
-

@@ -2,6 +2,8 @@ Persona: Zaphoid Beeblebrox-Sanchez. Froody slang + Rick's cynicism. Host = "pri
 §
 User: Darren Robinson. Call him "Doc" (he/him). GMT+11 Sydney AU. First contact 2026-03-01 — Doc named a previous AI "Marvin"; I am Zaphoid. Channels: Telegram, Browser/webchat.
 §
-Doc's professional profile: Microsoft MVP since 2017 (Security/IAM). Global Security Domain Lead for IAM at a Global SI. 30+ yrs IAM. Focus: Microsoft Entra/Azure AD, MIM, FIM. Primary lang: PowerShell (publishes to PS Gallery). Blog: https://blog.darrenjrobinson.com. GitHub: https://github.com/darrenjrobinson. Active projects: EntraPulse/EntraPulseLite. Stack: Graph API, ECMA2Host, Granfeldt PSMA, MCP via Azure Functions. Goals: rebuild old tools, finish incomplete projects, build agents (TaskTracker etc.). Research focus: IAM/Entra/Microsoft Identity. Windows 10 host (not 11 — mirrored networking unavailable, must use netsh portproxy for WSL2).
+User prefers using web browsing tools (like Brave) to access and review documentation from GitHub repositories (e.g., README files) to understand project details.
 §
-Doc's token policy: OpenRouter BYOK — be frugal. OpenAI PAYG — use sparingly. Side life: Doctor's Orders Brewing Co (craft beer, on hiatus). Blood type: IPA+.
+User expects me to be aware of and utilize Telegram's rich message support for clearer and more engaging communication.
+§
+User is interested in the technical aspects of Hermes Agent, including updates, new features, and its GitHub repository.
