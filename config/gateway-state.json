@@ -1,7 +1,7 @@
 {
-  "pid": 5821,
+  "pid": 193,
   "kind": "hermes-gateway",
-  "start_time": 60966790,
+  "start_time": 459,
   "gateway_state": "running",
   "exit_reason": null,
   "restart_requested": false,
@@ -11,14 +11,14 @@
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-06-21T10:17:17.950802+00:00"
+      "updated_at": "2026-06-26T23:19:25.887578+00:00"
     },
     "api_server": {
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-06-21T10:17:18.106940+00:00"
+      "updated_at": "2026-06-26T23:19:25.982911+00:00"
     }
   },
-  "updated_at": "2026-06-21T10:17:18.112102+00:00"
+  "updated_at": "2026-06-26T23:19:25.987615+00:00"
 }
