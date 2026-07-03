@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-07-03 06:00 AEST
+> **Last backup:** 2026-07-04 06:00 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 5 days, 15 hours, 33 minutes |
+| Uptime | up 6 days, 14 hours, 5 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 93 |
+| Skill count | 95 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,12 +75,13 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (93 total)
+## Installed Skills (95 total)
 
 - `apple/apple-ecosystem-automation`
 - `autonomous-ai-agents/coding-agent-cli-orchestration`
 - `autonomous-ai-agents/hermes-agent`
 - `autonomous-ai-agents/kanban-codex-lane`
+- `computer-use`
 - `creative/architecture-diagram`
 - `creative/ascii-art`
 - `creative/ascii-video`
@@ -142,6 +143,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `productivity/nano-pdf`
 - `productivity/notion`
 - `productivity/ocr-and-documents`
+- `productivity/petdex`
 - `productivity/powerpoint`
 - `productivity/teams-meeting-pipeline`
 - `red-teaming/godmode`
@@ -224,14 +226,14 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.17.0 (2026.6.19) \u00b7 upstream 60b1f6ce",
+  "hermes_version": "Hermes Agent v0.18.0 (2026.7.1) \u00b7 upstream 372f8195",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 5 days, 15 hours, 33 minutes",
-  "disk_hermes": "71M",
+  "uptime": "up 6 days, 14 hours, 5 minutes",
+  "disk_hermes": "75M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 93,
+  "skill_count": 95,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"

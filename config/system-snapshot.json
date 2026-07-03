@@ -2,14 +2,14 @@
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.17.0 (2026.6.19) \u00b7 upstream 60b1f6ce",
+  "hermes_version": "Hermes Agent v0.18.0 (2026.7.1) \u00b7 upstream 372f8195",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 5 days, 15 hours, 33 minutes",
-  "disk_hermes": "71M",
+  "uptime": "up 6 days, 14 hours, 5 minutes",
+  "disk_hermes": "75M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 93,
+  "skill_count": 95,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"
