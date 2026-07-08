@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-07-08 06:00 AEST
+> **Last backup:** 2026-07-09 06:00 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 2 days, 14 hours, 23 minutes |
+| Uptime | up 3 days, 13 hours, 45 minutes |
 
 ### Network / Connectivity
 
@@ -226,10 +226,10 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.18.0 (2026.7.1) \u00b7 upstream 70c6ae60",
+  "hermes_version": "Hermes Agent v0.18.0 (2026.7.1) \u00b7 upstream 4c3a388c",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 2 days, 14 hours, 23 minutes",
+  "uptime": "up 3 days, 13 hours, 45 minutes",
   "disk_hermes": "78M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
