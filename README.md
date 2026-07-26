@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-07-12 06:00 AEST
+> **Last backup:** 2026-07-27 09:57 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.5 |
-| Uptime | up 6 days, 11 hours, 0 minutes |
+| Uptime | up 0 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 95 |
+| Skill count | 98 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,13 +75,13 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (95 total)
+## Installed Skills (98 total)
 
 - `apple/apple-ecosystem-automation`
 - `autonomous-ai-agents/coding-agent-cli-orchestration`
+- `autonomous-ai-agents/computer-use`
 - `autonomous-ai-agents/hermes-agent`
 - `autonomous-ai-agents/kanban-codex-lane`
-- `computer-use`
 - `creative/architecture-diagram`
 - `creative/ascii-art`
 - `creative/ascii-video`
@@ -108,7 +108,6 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `devops/kanban-operations`
 - `devops/webhook-subscriptions`
 - `devops/wsl2-windows-networking`
-- `dogfood`
 - `email/agentmail`
 - `email/himalaya`
 - `gaming/minecraft-modpack-server`
@@ -126,26 +125,29 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `media/spotify`
 - `media/untappd-mcp`
 - `media/youtube-content`
-- `mlops/evaluation/lm-evaluation-harness`
+- `mlops/evaluation/evaluating-llms-harness`
 - `mlops/evaluation/weights-and-biases`
 - `mlops/huggingface-hub`
 - `mlops/inference/llama-cpp`
 - `mlops/inference/obliteratus`
-- `mlops/inference/vllm`
+- `mlops/inference/serving-llms-vllm`
 - `mlops/models/audiocraft`
 - `mlops/models/segment-anything`
 - `mlops/research/dspy`
 - `note-taking/obsidian`
 - `productivity/airtable`
+- `productivity/docx`
 - `productivity/google-workspace`
 - `productivity/linear`
 - `productivity/maps`
 - `productivity/nano-pdf`
 - `productivity/notion`
 - `productivity/ocr-and-documents`
+- `productivity/pdf`
 - `productivity/petdex`
 - `productivity/powerpoint`
 - `productivity/teams-meeting-pipeline`
+- `productivity/xlsx`
 - `red-teaming/godmode`
 - `research/arxiv`
 - `research/blogwatcher`
@@ -157,6 +159,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `software-development/agent-browser`
 - `software-development/brave-search-mcp`
 - `software-development/debugging-hermes-tui-commands`
+- `software-development/dogfood`
 - `software-development/hermes-agent-skill-authoring`
 - `software-development/hermes-s6-container-supervision`
 - `software-development/microsoft-iam`
@@ -226,14 +229,14 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "backup_timestamp": "",
   "hostname": "OpenClaw",
   "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.18.0 (2026.7.1) \u00b7 upstream b8880f12",
+  "hermes_version": "Hermes Agent v0.19.0 (2026.7.20) \u00b7 upstream ec734b66",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 6 days, 11 hours, 0 minutes",
-  "disk_hermes": "78M",
+  "uptime": "up 0 minutes",
+  "disk_hermes": "82M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 95,
+  "skill_count": 98,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"
