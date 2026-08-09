@@ -4,14 +4,14 @@
       {
         "id": "e054d5349bf5",
         "name": "zaphoid-github-backup",
-        "prompt": "Run the Hermes configuration backup script to snapshot Zaphoid's configuration and push it to GitHub.\n\nExecute the script at: ~/.hermes/scripts/github-backup/backup.sh\n\nSteps:\n1. Run `bash ~/.hermes/scripts/github-backup/backup.sh` \n2. Check the exit code and the last few lines of ~/.hermes/logs/github-backup.log\n3. Report the result: success (with commit message if any changes), \"no changes\" if nothing changed, or the error message if it failed.\n\nKeep the report brief \u2014 one or two sentences maximum. Example: \"\u2705 Backup pushed: 'backup: 2026-06-01 06:00 AEST \u2014 auto snapshot'\" or \"\u2705 No config changes since last backup.\" or \"\u274c Backup failed: [error]\"",
+        "prompt": "Unused because this is a script-only job.",
         "skills": [],
         "skill": null,
         "model": null,
         "provider": null,
         "base_url": null,
-        "script": null,
-        "no_agent": false,
+        "script": "github-backup/cron-wrapper.sh",
+        "no_agent": true,
         "context_from": null,
         "schedule": {
           "kind": "cron",
@@ -21,7 +21,7 @@
         "schedule_display": "0 6 * * *",
         "repeat": {
           "times": null,
-          "completed": 58
+          "completed": 59
         },
         "enabled": true,
         "state": "scheduled",
@@ -29,9 +29,9 @@
         "paused_reason": null,
         "created_at": "2026-06-01T15:28:59.354690+10:00",
         "next_run_at": "2026-08-11T06:00:00+10:00",
-        "last_run_at": "2026-08-09T06:01:33.358991+10:00",
-        "last_status": "ok",
-        "last_error": null,
+        "last_run_at": "2026-08-10T06:00:58.110123+10:00",
+        "last_status": "error",
+        "last_error": "RuntimeError: HTTP 404: Your request contains encrypted reasoning or compaction content that was produced under a different model. Encrypted payloads can only be replayed to the endpoint that created them. Send this conversation to the original model, or start a new conversation without the encrypted items.",
         "last_delivery_error": null,
         "deliver": "origin",
         "origin": {
@@ -40,14 +40,17 @@
           "chat_name": "Darren Robinson",
           "thread_id": null
         },
-        "enabled_toolsets": [
-          "terminal"
-        ],
+        "enabled_toolsets": null,
         "workdir": null,
         "profile": null,
-        "fire_claim": null
+        "fire_claim": {
+          "at": "2026-08-10T06:50:32.823473+10:00",
+          "by": "OpenClaw:196"
+        },
+        "provider_snapshot": null,
+        "model_snapshot": null
       }
     ],
-    "updated_at": "2026-08-10T06:00:12.014600+10:00"
+    "updated_at": "2026-08-10T06:50:32.823950+10:00"
   }
 ]
