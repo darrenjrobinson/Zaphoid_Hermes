@@ -21,17 +21,17 @@
         "schedule_display": "0 6 * * *",
         "repeat": {
           "times": null,
-          "completed": 59
+          "completed": 60
         },
         "enabled": true,
         "state": "scheduled",
         "paused_at": null,
         "paused_reason": null,
         "created_at": "2026-06-01T15:28:59.354690+10:00",
-        "next_run_at": "2026-08-11T06:00:00+10:00",
-        "last_run_at": "2026-08-10T06:00:58.110123+10:00",
-        "last_status": "error",
-        "last_error": "RuntimeError: HTTP 404: Your request contains encrypted reasoning or compaction content that was produced under a different model. Encrypted payloads can only be replayed to the endpoint that created them. Send this conversation to the original model, or start a new conversation without the encrypted items.",
+        "next_run_at": "2026-08-12T06:00:00+10:00",
+        "last_run_at": "2026-08-10T06:50:39.189819+10:00",
+        "last_status": "ok",
+        "last_error": null,
         "last_delivery_error": null,
         "deliver": "origin",
         "origin": {
@@ -43,14 +43,11 @@
         "enabled_toolsets": null,
         "workdir": null,
         "profile": null,
-        "fire_claim": {
-          "at": "2026-08-10T06:50:32.823473+10:00",
-          "by": "OpenClaw:196"
-        },
+        "fire_claim": null,
         "provider_snapshot": null,
         "model_snapshot": null
       }
     ],
-    "updated_at": "2026-08-10T06:50:32.823950+10:00"
+    "updated_at": "2026-08-11T06:00:35.973398+10:00"
   }
 ]
