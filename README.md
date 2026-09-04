@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-09-05 04:23 AEST
+> **Last backup:** 2026-09-05 06:00 AEST
 
 ---
 
@@ -28,8 +28,8 @@
 | Gateway Port | 18789 (Telegram) + 8000 (API Server) |
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
-| Python Version | 3.13.5 |
-| Uptime | up 0 minutes |
+| Python Version | 3.13.15 |
+| Uptime | up 1 hour, 37 minutes |
 
 ### Network / Connectivity
 
@@ -67,7 +67,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 |----------|-------|
 | Backend | SQLite (state.db + FTS5) |
 | Memory files | 4 |
-| Skill count | 98 |
+| Skill count | 110 |
 | Session DB | `~/.hermes/state.db` |
 | Agent notes | `config/MEMORY.md` (see this repo) |
 | User profile | `config/USER.md` (see this repo) |
@@ -75,7 +75,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ---
 
-## Installed Skills (98 total)
+## Installed Skills (110 total)
 
 - `.archive/wsl2-windows-networking`
 - `apple/apple-ecosystem-automation`
@@ -107,12 +107,13 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `data-science/jupyter-live-kernel`
 - `devops/doc-local-infra`
 - `devops/kanban-operations`
+- `devops/sdlc-review`
 - `devops/webhook-subscriptions`
 - `email/agentmail`
+- `email/email-inbox-triage`
 - `email/himalaya`
 - `gaming/minecraft-modpack-server`
 - `gaming/pokemon-player`
-- `github/codebase-inspection`
 - `github/github-auth`
 - `github/github-code-review`
 - `github/github-issues`
@@ -136,21 +137,28 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `mlops/research/dspy`
 - `note-taking/obsidian`
 - `productivity/airtable`
+- `productivity/box`
+- `productivity/document-to-action-items`
 - `productivity/docx`
 - `productivity/google-workspace`
 - `productivity/linear`
 - `productivity/maps`
+- `productivity/meeting-action-items`
 - `productivity/nano-pdf`
 - `productivity/notion`
 - `productivity/ocr-and-documents`
 - `productivity/pdf`
 - `productivity/petdex`
 - `productivity/powerpoint`
+- `productivity/product-price-monitor`
 - `productivity/teams-meeting-pipeline`
+- `productivity/weekly-review-planning`
 - `productivity/xlsx`
 - `red-teaming/godmode`
 - `research/arxiv`
 - `research/blogwatcher`
+- `research/competitor-news-monitor`
+- `research/grounded-citations`
 - `research/llm-wiki`
 - `research/polymarket`
 - `research/research-paper-writing`
@@ -158,10 +166,13 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `social-media/xurl`
 - `software-development/agent-browser`
 - `software-development/brave-search-mcp`
+- `software-development/codebase-inspection`
 - `software-development/debugging-hermes-tui-commands`
 - `software-development/dogfood`
+- `software-development/github`
 - `software-development/hermes-agent-skill-authoring`
 - `software-development/hermes-s6-container-supervision`
+- `software-development/inspecting-hermes-desktop-dom`
 - `software-development/microsoft-iam`
 - `software-development/node-inspect-debugger`
 - `software-development/persona-management`
@@ -174,6 +185,7 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `software-development/systematic-debugging`
 - `software-development/test-driven-development`
 - `software-development/writing-plans`
+- `web/blocked-page-recovery`
 - `yuanbao`
 
 
@@ -228,15 +240,15 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
 {
   "backup_timestamp": "",
   "hostname": "OpenClaw",
-  "python_version": "3.13.5",
-  "hermes_version": "Hermes Agent v0.19.0 (2026.7.20) \u00b7 upstream 551e1c6d",
+  "python_version": "3.13.15",
+  "hermes_version": "",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 0 minutes",
-  "disk_hermes": "86M",
+  "uptime": "up 1 hour, 37 minutes",
+  "disk_hermes": "135M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
-  "skill_count": 98,
+  "skill_count": 110,
   "platforms": {
     "telegram": "connected",
     "api_server": "connected"
