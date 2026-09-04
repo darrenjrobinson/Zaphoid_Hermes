@@ -1,4 +1,5 @@
 [
+  ".archive/wsl2-windows-networking",
   "apple/apple-ecosystem-automation",
   "autonomous-ai-agents/coding-agent-cli-orchestration",
   "autonomous-ai-agents/computer-use",
@@ -29,7 +30,6 @@
   "devops/doc-local-infra",
   "devops/kanban-operations",
   "devops/webhook-subscriptions",
-  "devops/wsl2-windows-networking",
   "email/agentmail",
   "email/himalaya",
   "gaming/minecraft-modpack-server",
