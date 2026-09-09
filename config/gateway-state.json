@@ -1,7 +1,7 @@
 {
-  "pid": 3830,
+  "pid": 868,
   "kind": "hermes-gateway",
-  "start_time": 160112,
+  "start_time": 110600,
   "gateway_state": "running",
   "exit_reason": null,
   "restart_requested": false,
@@ -11,9 +11,9 @@
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-09-05T12:26:14.125590+00:00",
-      "writer_pid": 3830,
-      "writer_start_time": 160112,
+      "updated_at": "2026-09-09T11:59:21.941073+00:00",
+      "writer_pid": 868,
+      "writer_start_time": 110600,
       "needs_attention": false,
       "retrying_since": null
     },
@@ -21,12 +21,12 @@
       "state": "connected",
       "error_code": null,
       "error_message": null,
-      "updated_at": "2026-09-04T18:50:07.564159+00:00",
-      "writer_pid": 3830,
-      "writer_start_time": 160112
+      "updated_at": "2026-09-09T11:59:21.948248+00:00",
+      "writer_pid": 868,
+      "writer_start_time": 110600
     }
   },
-  "updated_at": "2026-09-05T12:26:14.125552+00:00",
+  "updated_at": "2026-09-09T12:02:26.453067+00:00",
   "code_sha": "59d330fd15a692b439219e505bc704fcde0b2b6f",
   "code_version": "0.21.0",
   "session_store": {
