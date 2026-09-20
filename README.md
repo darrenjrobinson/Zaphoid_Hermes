@@ -1,7 +1,7 @@
 # Zaphoid Hermes Agent: Configuration Backup
 
 > Auto-generated backup of Hermes Agent "Zaphoid" configuration and workspace.
-> **Last backup:** 2026-09-21 04:20 AEST
+> **Last backup:** 2026-09-21 06:00 AEST
 
 ---
 
@@ -29,7 +29,7 @@
 | Gateway Bind | 0.0.0.0 |
 | Hermes Version | 0.15.1 |
 | Python Version | 3.13.15 |
-| Uptime | up 0 minutes |
+| Uptime | up 1 hour, 40 minutes |
 
 ### Network / Connectivity
 
@@ -77,34 +77,58 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 
 ## Installed Skills (110 total)
 
+- `.archive/airtable`
+- `.archive/architecture-diagram`
+- `.archive/arxiv`
+- `.archive/ascii-video`
+- `.archive/baoyu-infographic`
+- `.archive/claude-design`
+- `.archive/codebase-inspection`
+- `.archive/design-md`
+- `.archive/dogfood`
+- `.archive/gif-search`
+- `.archive/google-workspace`
+- `.archive/hermes-agent-skill-authoring`
+- `.archive/himalaya`
+- `.archive/humanizer`
+- `.archive/llm-wiki`
+- `.archive/manim-video`
+- `.archive/maps`
 - `.archive/microsoft-iam`
+- `.archive/node-inspect-debugger`
+- `.archive/notion`
+- `.archive/obsidian`
 - `.archive/openrouter-image-gen`
+- `.archive/p5js`
 - `.archive/persona-management`
+- `.archive/popular-web-designs`
+- `.archive/powerpoint`
+- `.archive/python-debugpy`
+- `.archive/requesting-code-review`
+- `.archive/simplify-code`
+- `.archive/songsee`
+- `.archive/songwriting-and-ai-music`
+- `.archive/spike`
+- `.archive/systematic-debugging`
+- `.archive/teams-meeting-pipeline`
+- `.archive/test-driven-development`
 - `.archive/wsl2-windows-networking`
+- `.archive/xurl`
+- `.archive/youtube-content`
 - `apple/apple-ecosystem-automation`
 - `autonomous-ai-agents/coding-agent-cli-orchestration`
 - `autonomous-ai-agents/computer-use`
 - `autonomous-ai-agents/hermes-agent`
 - `autonomous-ai-agents/kanban-codex-lane`
-- `creative/architecture-diagram`
 - `creative/ascii-art`
-- `creative/ascii-video`
 - `creative/baoyu-article-illustrator`
 - `creative/baoyu-comic`
-- `creative/baoyu-infographic`
-- `creative/claude-design`
 - `creative/comfyui`
 - `creative/creative-ideation`
-- `creative/design-md`
 - `creative/excalidraw`
-- `creative/humanizer`
-- `creative/manim-video`
-- `creative/p5js`
 - `creative/pixel-art`
-- `creative/popular-web-designs`
 - `creative/pretext`
 - `creative/sketch`
-- `creative/songwriting-and-ai-music`
 - `creative/touchdesigner-mcp`
 - `data-science/jupyter-live-kernel`
 - `devops/doc-local-infra`
@@ -113,7 +137,6 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `devops/webhook-subscriptions`
 - `email/agentmail`
 - `email/email-inbox-triage`
-- `email/himalaya`
 - `gaming/minecraft-modpack-server`
 - `gaming/pokemon-player`
 - `github/github-auth`
@@ -122,12 +145,9 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `github/github-pr-workflow`
 - `github/github-repo-management`
 - `mcp/native-mcp`
-- `media/gif-search`
 - `media/heartmula`
-- `media/songsee`
 - `media/spotify`
 - `media/untappd-mcp`
-- `media/youtube-content`
 - `mlops/evaluation/evaluating-llms-harness`
 - `mlops/evaluation/weights-and-biases`
 - `mlops/huggingface-hub`
@@ -137,53 +157,33 @@ start /min wsl.exe -d Ubuntu -u hermes -- bash -c "hermes gateway run"
 - `mlops/models/audiocraft`
 - `mlops/models/segment-anything`
 - `mlops/research/dspy`
-- `note-taking/obsidian`
-- `productivity/airtable`
 - `productivity/box`
 - `productivity/document-to-action-items`
 - `productivity/docx`
-- `productivity/google-workspace`
 - `productivity/linear`
-- `productivity/maps`
 - `productivity/meeting-action-items`
 - `productivity/nano-pdf`
-- `productivity/notion`
 - `productivity/ocr-and-documents`
 - `productivity/pdf`
 - `productivity/petdex`
-- `productivity/powerpoint`
 - `productivity/product-price-monitor`
-- `productivity/teams-meeting-pipeline`
 - `productivity/weekly-review-planning`
 - `productivity/xlsx`
 - `red-teaming/godmode`
-- `research/arxiv`
 - `research/blogwatcher`
 - `research/competitor-news-monitor`
 - `research/grounded-citations`
-- `research/llm-wiki`
 - `research/polymarket`
 - `research/research-paper-writing`
 - `smart-home/openhue`
-- `social-media/xurl`
 - `software-development/agent-browser`
 - `software-development/brave-search-mcp`
-- `software-development/codebase-inspection`
 - `software-development/debugging-hermes-tui-commands`
-- `software-development/dogfood`
 - `software-development/github`
-- `software-development/hermes-agent-skill-authoring`
 - `software-development/hermes-s6-container-supervision`
 - `software-development/inspecting-hermes-desktop-dom`
-- `software-development/node-inspect-debugger`
 - `software-development/plan`
-- `software-development/python-debugpy`
-- `software-development/requesting-code-review`
-- `software-development/simplify-code`
-- `software-development/spike`
 - `software-development/subagent-driven-development`
-- `software-development/systematic-debugging`
-- `software-development/test-driven-development`
 - `software-development/writing-plans`
 - `web/blocked-page-recovery`
 - `yuanbao`
@@ -244,8 +244,8 @@ The following service keys are configured in `~/.hermes/.env` (values **not** st
   "hermes_version": "",
   "os": "Linux OpenClaw 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 GNU/Linux",
   "wsl_distro": "Debian GNU/Linux 13 (trixie)",
-  "uptime": "up 0 minutes",
-  "disk_hermes": "141M",
+  "uptime": "up 1 hour, 40 minutes",
+  "disk_hermes": "144M",
   "git_version": "git version 2.47.3",
   "memory_file_count": 4,
   "skill_count": 110,
