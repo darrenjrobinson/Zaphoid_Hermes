@@ -21,15 +21,15 @@
         "schedule_display": "0 6 * * *",
         "repeat": {
           "times": null,
-          "completed": 88
+          "completed": 89
         },
         "enabled": true,
         "state": "scheduled",
         "paused_at": null,
         "paused_reason": null,
         "created_at": "2026-06-01T15:28:59.354690+10:00",
-        "next_run_at": "2026-09-22T06:00:00+10:00",
-        "last_run_at": "2026-09-21T04:21:12.364444+10:00",
+        "next_run_at": "2026-09-23T06:00:00+10:00",
+        "last_run_at": "2026-09-21T06:00:32.768885+10:00",
         "last_status": "ok",
         "last_error": null,
         "last_delivery_error": null,
@@ -44,20 +44,20 @@
         "workdir": null,
         "profile": null,
         "fire_claim": {
-          "at": "2026-09-21T06:00:12.226713+10:00",
-          "by": "OpenClaw:201:a1a60fcbb8b04b47922844f06b156dbe"
+          "at": "2026-09-22T06:00:42.239328+10:00",
+          "by": "OpenClaw:201:021070228d1d433c96dd4933b2afc1f5"
         },
         "provider_snapshot": null,
         "model_snapshot": null,
         "last_dispatch": {
-          "scheduled_at": "2026-09-21T06:00:00+10:00",
-          "dispatched_at": "2026-09-21T06:00:11.673100+10:00",
-          "lateness_seconds": 11.7,
+          "scheduled_at": "2026-09-22T06:00:00+10:00",
+          "dispatched_at": "2026-09-22T06:00:41.573984+10:00",
+          "lateness_seconds": 41.6,
           "kind": "on_time"
         },
         "failure_streak": 0
       }
     ],
-    "updated_at": "2026-09-21T06:00:12.227125+10:00"
+    "updated_at": "2026-09-22T06:00:42.239619+10:00"
   }
 ]
